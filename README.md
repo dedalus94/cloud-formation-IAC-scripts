@@ -1,4 +1,4 @@
-The following templates can be used to deploy a simple EC2 VPC with an internet gateway associated to it. 
+The following templates can be used to deploy a simple EC2 instance in a VPC with an internet gateway associated with it. 
 
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/0537b69f-956b-4496-9905-10e90459e411)
 
