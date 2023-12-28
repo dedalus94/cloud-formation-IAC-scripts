@@ -16,13 +16,13 @@ Resources:
     Type: AWS::EC2::VPC
     Properties: 
       CidrBlock: !Ref VpcCIDR
-      EnableDnsHostNames: True 
+      EnableDnsHostnames: True 
       Tags:
       - Key: Name 
         Value: !Ref ProjectName
 
   InternetGateway:
-    Type: AWS::EC2:InternetGateway
+    Type: AWS::EC2::InternetGateway
     Properties:
       Tags:
       - Key: Name

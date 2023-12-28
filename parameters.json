@@ -1,14 +1,12 @@
-{
-    {
-        "ParameterKey":"ProjectName",
-        "ParameterValue":"udacity-vpc-exercise"
+[
+ {
+    "ParameterKey": "ProjectName",
+    "ParameterValue": "udacity-vpc-exercise"
 
-    },
-    {
-        "ParameterKey":"VpcCIDR",
-        "ParameterValue":"10.2.0.0/16"
+ },
+ {
+    "ParameterKey": "VpcCIDR",
+    "ParameterValue": "10.2.0.0/16"
 
-    }
-
-
-}
+ }
+]
