@@ -19,6 +19,8 @@
 
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/0537b69f-956b-4496-9905-10e90459e411)
 
+### The  creation steps can be found in the 'Events' tab of the stack
+
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/f3466bd9-a922-4149-9d52-2812a07a46ed)
 
 
@@ -26,6 +28,8 @@
 
 
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/672b23e1-aeb8-40d0-9759-11d6dbf82703)
+
+### A map of more complex VPC is also available on AWS:
 
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/42cd145e-d2c6-4451-935b-cac9b01f3c8c)
 
