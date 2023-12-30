@@ -6,7 +6,7 @@ The templates use several intrinsic functions~
 * **!Sub** : substitutes a placeholder in a string with a parameter, for example ``${ProjectName}-public-subnet1`` will become ``udacity-vpc-subents-exercise-public-subnet1`` because the ProjectName is a parameter with value ``udacity-vpc-subents-exercise``
 * **!GetAtt** : gets an attribute from another resource, for example a static ip address from an Elastic IP address resource, ``!GetAtt NatGateway1EIP.AllocationId``
 * **!Select** : gets an item from a list generated with another intrinsic function, for example ``!Select [1, !GetAZs '']`` to select availability zone 1 from the availability zone available for the default region (region can be specified in the empty string).
-* **!Join** : concatenates values, for example to create a list with the IDs of all subnets ``!Join [ ",", [ !Ref PrivateSubnet1, !Ref PrivateSubnet2 ]]``
+* **!Join** : concatenates values with a specific delimiter, for example, to create a list with the IDs of all subnets ``!Join [ ",", [ !Ref PrivateSubnet1, !Ref PrivateSubnet2 ]]``
 
 The template creates the following resources: 
 
