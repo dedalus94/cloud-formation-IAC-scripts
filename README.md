@@ -1,11 +1,17 @@
 ## File structure of the project
 
-- network-template.yml: cloud formation template to create an EC2 instance within a VPC and an internet gateway attached to it
-  
-- parameters.json : parameters to create the previous cloud formation stack. The values are referenced in the template and having the parameters separated offers flexibility in case any changes are required (or the same template to be redeployed with a different name).
-  
-- network-and-subnets-template.yml : cloud formation template to create an EC2 instance within a VPC with 4 subnets each one in a different availability zone.
-  
+There are different cloud formation template files in this project. The final one - built with iterations over the others - is **network-with-subnets-natgateways-and-outputs.yml**
+The template creates the following resources: 
+* VPC
+* Internet Gateway attached with the VPC
+* 4 Private subnets in different availability zones to increase availability (2 private and 2 public)
+* 2 Nat Gateways - The NAT Gateway is attached to the public subnets and it allows inbout traffic to the private subnets *if* initiated by the private subnets
+* Route tables
+
+The template also has a Parameters section to refrence parameters in a json file and an Output section to save information about the resources created:
+
+![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/059b35df-b697-4460-b53b-79beadafd855)
+
 - parameters2.json : new parameters file
   
 - create.sh : bash script to create a stack through AWS CLI using a cloud formation template and a parameter file (takes 3 parameters: cloud stack name, template file and parameter file)
