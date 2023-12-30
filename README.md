@@ -35,3 +35,9 @@ Private traffic:
 
 The files can be run through a terminal and they require AWS CLI to be installed and configured.
 
+
+## Infrastructure diagram
+
+![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/f00ec782-c634-4b69-8330-cb466971ce07)
+
+
