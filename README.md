@@ -1,6 +1,12 @@
 ## File structure of the project
 
-There are different cloud formation template files in this project. The final one - built with iterations over the others - is **network-with-subnets-natgateways-and-outputs.yml**
+There are different cloud formation template files in this project. The final one - built with iterations over the others - is **network-with-subnets-natgateways-and-outputs.yml**.
+The templates use several intrinsic functions~
+* !Ref : references a different resource in the same template or one of the parameters that are then taken from the paramater JSON file
+* !SUb : substitutes a placeholder in a string with a parameter, for example ``${ProjectName}-public-subnet1`` will become ``udacity-vpc-subents-exercise-public-subnet1`` because the ProjectName is a parameter with value ``udacity-vpc-subents-exercise``
+* !GetAtt : gets an attribute from another resource, for example a static ip address from an Elastic IP address resource, ``!GetAtt NatGateway1EIP.AllocationId``
+* !Select : gets an item from a list generated with another intrinsic function, for example ``!Select [1, !GetAZs '']`` to select availability zone 1 from the availability zone available for the default region (region can be specified in the empty string).
+* !Join : concatenates values, for example to create a list with the IDs of all subnets ``!Join [ ",", [ !Ref PrivateSubnet1, !Ref PrivateSubnet2 ]]``
 The template creates the following resources: 
 * VPC
 * Internet Gateway attached with the VPC
