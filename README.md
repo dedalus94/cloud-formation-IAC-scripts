@@ -1,10 +1,10 @@
 # Udacity Cloud DevOps Engineer Nanodegree - 'Deploy Infrastructure as Code (IAC)'
 
 
-## File structure of the project
+## File structure 
 
 There are different cloud formation template files in this project. The final one - built with iterations over the others - is **network-with-subnets-natgateways-and-outputs.yml**.
-The templates use several intrinsic functions~
+The templates use several intrinsic functions:
 * **!Ref** : references a different resource in the same template or one of the parameters that are then taken from the paramater JSON file
 * **!Sub** : substitutes a placeholder in a string with a parameter, for example ``${ProjectName}-public-subnet1`` will become ``udacity-vpc-subents-exercise-public-subnet1`` because the ProjectName is a parameter with value ``udacity-vpc-subents-exercise``
 * **!GetAtt** : gets an attribute from another resource, for example a static ip address from an Elastic IP address resource, ``!GetAtt NatGateway1EIP.AllocationId``
