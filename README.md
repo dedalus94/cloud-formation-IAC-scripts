@@ -29,6 +29,7 @@ Public traffic
 Private traffic: 
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/20d7f098-ae1f-4f11-a70c-e4a3c7f703cf)
 
+## Installation 
 
-
+The files can be run through a terminal and they require AWS CLI to be installed and configured.
 
