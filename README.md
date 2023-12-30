@@ -33,3 +33,9 @@
 
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/42cd145e-d2c6-4451-935b-cac9b01f3c8c)
 
+
+## Outputs
+
+![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/059b35df-b697-4460-b53b-79beadafd855)
+
+
