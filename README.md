@@ -5,7 +5,9 @@ The template creates the following resources:
 * VPC
 * Internet Gateway attached with the VPC
 * 4 Private subnets in different availability zones to increase availability (2 private and 2 public)
-* 2 Nat Gateways - The NAT Gateway is attached to the public subnets and it allows inbout traffic to the private subnets *if* initiated by the private subnets. This can be useful for example to download updates for the resources within the VPC from the internet. 
+* 2 Nat Gateways - The NAT Gateway is attached to the public subnets and it allows inbound traffic to the private subnets *if* initiated by the private subnets. This can be useful for example to download updates for the resources within the VPC from the internet.
+  The NAT gateways perform Network Address Translation for the private subnets using a public address and that is why they are attached to the public subnets.
+* Elastic IP for the NAT gateways, this is required so that the IP does not change and any resources or services that depend on the NAT gateway's IP address won't be affected by changes.
 * Route tables
 
 The template also has a Parameters section to reference parameters in a JSON file and an Output section to save information about the resources created:
