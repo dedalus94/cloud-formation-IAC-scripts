@@ -23,7 +23,8 @@ Other files:
 ### A map of more complex VPC is also available on AWS with traffic rules highlighted:
 
 Public traffic
-![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/5c446708-57da-41eb-804f-8abfa6308eae)
+![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/ffad20fd-4788-4482-b4fe-73b3d53b19ee)
+
 
 Private traffic: 
 ![image](https://github.com/dedalus94/cloud-formation-IAC-scripts/assets/49538048/20d7f098-ae1f-4f11-a70c-e4a3c7f703cf)
