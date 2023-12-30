@@ -1,5 +1,4 @@
-# Udacity Cloud DevOps Engineer Nanodegree 
-# subsection 'Deploy Infrastruction as Code (IAC)'
+# Udacity Cloud DevOps Engineer Nanodegree - 'Deploy Infrastructure as Code (IAC)'
 
 
 ## File structure of the project
