@@ -1,4 +1,6 @@
-# Udacity Cloud DevOps Engineer Nanodegree - 'Deploy Infrastructure as Code (IAC)'
+# Udacity Cloud DevOps Engineer Nanodegree
+### Section 'Deploy Infrastructure as Code (IAC)'
+#### Subsection Networking Infrastructure
 
 
 ## File structure 
